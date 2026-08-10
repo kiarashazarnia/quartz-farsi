@@ -9,7 +9,7 @@ export const sharedPageComponents: SharedLayout = {
     // blog-style "recent notes" roll, only on the homepage
     Component.ConditionalRender({
       component: Component.RecentNotes({
-        title: "Recent Notes",
+        title: "یادداشت‌های اخیر",
         limit: 5,
         showTags: true,
         filter: (f) => f.slug !== undefined && f.slug !== "index" && !f.slug.startsWith("tags/"),

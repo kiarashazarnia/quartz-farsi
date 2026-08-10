@@ -18,9 +18,17 @@ html {
   --textHighlight: #fff23688;
 }
 
-// Make the page title use the code/monospace font
+// Use the Persian header font for the page title
 .page-title {
-  font-family: var(--codeFont) !important;
+  font-family: var(--headerFont), var(--bodyFont) !important;
+}
+
+// Code stays LTR even inside RTL prose
+pre,
+code {
+  direction: ltr;
+  unicode-bidi: embed;
+  text-align: left;
 }
 
 .version-badge {
